@@ -74,4 +74,4 @@ O aplicativo utiliza **Google Apps Script** para transformar dados das planilhas
 
 ## Créditos
 
-Desenvolvido por [Matheus Wagner Teixeira](https://github.com/theus1n), [Gabriel Gattino Reus](https://github.com/ggattino), [Gabriel Lehmen](https://github.com/glehmen) e Aquiles Schluter para auxiliar o atendimento remoto e personalizado em fisioterapia.
+Desenvolvido por [Matheus Wagner Teixeira](https://github.com/theus1n), [Gabriel Gattino Reus](https://github.com/ggattino), [Gabriel Lehmen](https://github.com/glehmen) e [Aquiles Schluter](https://github.com/aquilessch) para auxiliar o atendimento remoto e personalizado em fisioterapia.
