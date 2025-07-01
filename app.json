@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "my-mvp-app",
+    "name": "Minha Fisio App",
     "slug": "my-mvp-app",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -20,10 +20,16 @@
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "edgeToEdgeEnabled": true
+      "edgeToEdgeEnabled": true,
+      "package": "com.matheus4242.mymvpapp"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "963bc7d2-6761-44e5-aaf2-2b374f808fa0"
+      }
     }
   }
 }
