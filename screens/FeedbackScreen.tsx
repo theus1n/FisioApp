@@ -4,7 +4,9 @@ import {
   Text,
   StyleSheet,
   FlatList,
+  TouchableOpacity,
 } from 'react-native';
+import { useNavigation } from '@react-navigation/native';
 
 type FeedbackItem = {
   id: string;
@@ -31,8 +33,13 @@ const feedbackList: FeedbackItem[] = [
 ];
 
 export default function FeedbackScreen() {
+  const navigation = useNavigation();
   return (
     <View style={styles.container}>
+      <TouchableOpacity style={styles.topButton} onPress={() => navigation.navigate('Home')}>
+        <Text style={styles.topButtonText}>Voltar</Text>
+      </TouchableOpacity>
+      <View style={{ height: 32 }} />
       <Text style={styles.title}>Feedback da Dr.a</Text>
       <FlatList
         data={feedbackList}
@@ -49,7 +56,6 @@ export default function FeedbackScreen() {
     </View>
   );
 }
-
 const styles = StyleSheet.create({
   container: {
     flex: 1,
@@ -79,5 +85,20 @@ const styles = StyleSheet.create({
   feedback: {
     fontSize: 14,
     color: '#555',
+  },
+  topButton: {
+    position: 'absolute',
+    top: 40,
+    left: 16,
+    backgroundColor: '#7fb2ff',
+    paddingVertical: 6,
+    paddingHorizontal: 16,
+    borderRadius: 20,
+    zIndex: 10,
+  },
+  topButtonText: {
+    color: '#fff',
+    fontSize: 16,
+    fontWeight: 'bold',
   },
 });

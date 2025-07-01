@@ -40,13 +40,11 @@ export default function AgendaScreen() {
   return (
     <ScrollView contentContainerStyle={styles.container}>
       {/* Voltar */}
-      <TouchableOpacity onPress={() => navigation.goBack()} style={{ marginBottom: 16 }}>
-        <View style={{ flexDirection: 'row', alignItems: 'center' }}>
-          <ArrowLeft size={24} color="#000" />
-          <Text style={{ marginLeft: 8, fontSize: 16 }}>Voltar</Text>
-        </View>
-      </TouchableOpacity>
 
+      <TouchableOpacity style={styles.topButton} onPress={() => navigation.goBack()}>
+        <Text style={styles.topButtonText}>Voltar</Text>
+      </TouchableOpacity>
+      <View style={{ height: 48 }} />
       <Text style={{ fontSize: 24, fontWeight: 'bold', marginBottom: 20 }}>
         Sua Agenda
       </Text>
@@ -125,5 +123,20 @@ const styles = StyleSheet.create({
     fontSize: 14,
     color: '#555',
     marginBottom: 4,
+  },
+  topButton: {
+    position: 'absolute',
+    top: 40,
+    left: 16,
+    backgroundColor: '#7fb2ff',
+    paddingVertical: 6,
+    paddingHorizontal: 16,
+    borderRadius: 20,
+    zIndex: 10,
+  },
+  topButtonText: {
+    color: '#fff',
+    fontSize: 16,
+    fontWeight: 'bold',
   },
 });
